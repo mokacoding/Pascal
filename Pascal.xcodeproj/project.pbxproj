@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C426EDF532568C0F1B6D1DC /* Pods_Pascal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E52A2F89FF7222CECCA84D1 /* Pods_Pascal.framework */; };
 		3FA3483E1BD79B0300022FAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA3483D1BD79B0300022FAA /* AppDelegate.swift */; };
 		3FA348401BD79B0300022FAA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA3483F1BD79B0300022FAA /* ViewController.swift */; };
 		3FA348431BD79B0300022FAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FA348411BD79B0300022FAA /* Main.storyboard */; };
@@ -22,6 +23,9 @@
 		3FA348441BD79B0300022FAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FA348471BD79B0300022FAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3FA348491BD79B0300022FAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E52A2F89FF7222CECCA84D1 /* Pods_Pascal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pascal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABD877FF05D78B2954D986F2 /* Pods-Pascal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pascal.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pascal/Pods-Pascal.debug.xcconfig"; sourceTree = "<group>"; };
+		CADACE2543010BE3ED8E6305 /* Pods-Pascal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pascal.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pascal/Pods-Pascal.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C426EDF532568C0F1B6D1DC /* Pods_Pascal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				3FA3483C1BD79B0300022FAA /* Pascal */,
 				3FA3483B1BD79B0300022FAA /* Products */,
+				83E188831E7196434A3C1A24 /* Pods */,
+				9B3C06627CB2B1B067CD37EF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = Pascal;
 			sourceTree = "<group>";
 		};
+		83E188831E7196434A3C1A24 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ABD877FF05D78B2954D986F2 /* Pods-Pascal.debug.xcconfig */,
+				CADACE2543010BE3ED8E6305 /* Pods-Pascal.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9B3C06627CB2B1B067CD37EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7E52A2F89FF7222CECCA84D1 /* Pods_Pascal.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3FA3484C1BD79B0300022FAA /* Build configuration list for PBXNativeTarget "Pascal" */;
 			buildPhases = (
+				345188EE0FB3077FD378C599 /* Check Pods Manifest.lock */,
 				3FA348361BD79B0300022FAA /* Sources */,
 				3FA348371BD79B0300022FAA /* Frameworks */,
 				3FA348381BD79B0300022FAA /* Resources */,
+				E34705C8EBCAD83013A39948 /* Embed Pods Frameworks */,
+				1FB3CAF540D1B0F66BD5FC81 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1FB3CAF540D1B0F66BD5FC81 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pascal/Pods-Pascal-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		345188EE0FB3077FD378C599 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E34705C8EBCAD83013A39948 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pascal/Pods-Pascal-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3FA348361BD79B0300022FAA /* Sources */ = {
@@ -247,6 +322,7 @@
 		};
 		3FA3484D1BD79B0300022FAA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABD877FF05D78B2954D986F2 /* Pods-Pascal.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Pascal/Info.plist;
@@ -258,6 +334,7 @@
 		};
 		3FA3484E1BD79B0300022FAA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CADACE2543010BE3ED8E6305 /* Pods-Pascal.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Pascal/Info.plist;
@@ -286,6 +363,7 @@
 				3FA3484E1BD79B0300022FAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
