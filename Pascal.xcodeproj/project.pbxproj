@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		2C426EDF532568C0F1B6D1DC /* Pods_Pascal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E52A2F89FF7222CECCA84D1 /* Pods_Pascal.framework */; };
+		3F028C391BDB5BDB00E59A20 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F028C381BDB5BDB00E59A20 /* ImageViewController.swift */; };
+		3F028C3B1BDB5CC000E59A20 /* wallpaper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F028C3A1BDB5CC000E59A20 /* wallpaper.jpg */; };
+		3F028C3D1BDB5E9100E59A20 /* wallpaper2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F028C3C1BDB5E9100E59A20 /* wallpaper2.jpg */; };
 		3FA3483E1BD79B0300022FAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA3483D1BD79B0300022FAA /* AppDelegate.swift */; };
 		3FA348401BD79B0300022FAA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA3483F1BD79B0300022FAA /* ViewController.swift */; };
 		3FA348431BD79B0300022FAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FA348411BD79B0300022FAA /* Main.storyboard */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F028C381BDB5BDB00E59A20 /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		3F028C3A1BDB5CC000E59A20 /* wallpaper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wallpaper.jpg; sourceTree = "<group>"; };
+		3F028C3C1BDB5E9100E59A20 /* wallpaper2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wallpaper2.jpg; sourceTree = "<group>"; };
 		3FA3483A1BD79B0300022FAA /* Pascal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pascal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FA3483D1BD79B0300022FAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FA3483F1BD79B0300022FAA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -70,6 +76,9 @@
 				3FA348441BD79B0300022FAA /* Assets.xcassets */,
 				3FA348461BD79B0300022FAA /* LaunchScreen.storyboard */,
 				3FA348491BD79B0300022FAA /* Info.plist */,
+				3F028C381BDB5BDB00E59A20 /* ImageViewController.swift */,
+				3F028C3A1BDB5CC000E59A20 /* wallpaper.jpg */,
+				3F028C3C1BDB5E9100E59A20 /* wallpaper2.jpg */,
 			);
 			path = Pascal;
 			sourceTree = "<group>";
@@ -154,7 +163,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F028C3B1BDB5CC000E59A20 /* wallpaper.jpg in Resources */,
 				3FA348481BD79B0300022FAA /* LaunchScreen.storyboard in Resources */,
+				3F028C3D1BDB5E9100E59A20 /* wallpaper2.jpg in Resources */,
 				3FA348451BD79B0300022FAA /* Assets.xcassets in Resources */,
 				3FA348431BD79B0300022FAA /* Main.storyboard in Resources */,
 			);
@@ -244,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FA348401BD79B0300022FAA /* ViewController.swift in Sources */,
+				3F028C391BDB5BDB00E59A20 /* ImageViewController.swift in Sources */,
 				3FA3483E1BD79B0300022FAA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

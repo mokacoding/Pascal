@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9058" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="aCt-8q-q31">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9058" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="aCt-8q-q31">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9048"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -71,7 +72,50 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1841" y="378"/>
+            <point key="canvasLocation" x="1846" y="100"/>
+        </scene>
+        <!--Image View Controller-->
+        <scene sceneID="8fI-ws-ueR">
+            <objects>
+                <viewController id="tvG-dl-p0c" customClass="ImageViewController" customModule="Pascal" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WgC-ON-jXF"/>
+                        <viewControllerLayoutGuide type="bottom" id="drG-AP-ejf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2zO-MK-zcG">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="rW2-78-kO3">
+                                <rect key="frame" x="20" y="72" width="560" height="471"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wallpaper2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="YS9-pA-i04">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="236"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XaJ-vm-6Ha">
+                                        <rect key="frame" x="0.0" y="236" width="560" height="236"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rW2-78-kO3" firstAttribute="leading" secondItem="2zO-MK-zcG" secondAttribute="leadingMargin" id="Tvs-3E-aya"/>
+                            <constraint firstItem="rW2-78-kO3" firstAttribute="top" secondItem="WgC-ON-jXF" secondAttribute="bottom" constant="8" id="j5t-wm-g4z"/>
+                            <constraint firstItem="rW2-78-kO3" firstAttribute="trailing" secondItem="2zO-MK-zcG" secondAttribute="trailingMargin" id="lxw-pd-Umb"/>
+                            <constraint firstItem="drG-AP-ejf" firstAttribute="top" secondItem="rW2-78-kO3" secondAttribute="bottom" constant="8" id="tWZ-4Z-3Ow"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="history" id="syS-fM-dkn"/>
+                    <connections>
+                        <outlet property="coloredView" destination="XaJ-vm-6Ha" id="Mny-pB-swL"/>
+                        <outlet property="imageView" destination="YS9-pA-i04" id="hTz-pF-Q6c"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Ta-ce-M8h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1846" y="783"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="vAa-AX-6Eg">
@@ -103,6 +147,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="kI4-Fn-G1x"/>
+                        <segue destination="tvG-dl-p0c" kind="relationship" relationship="viewControllers" id="T9x-9b-Ii6"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lWc-Ni-HrS" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -110,4 +155,7 @@
             <point key="canvasLocation" x="1117" y="378"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="wallpaper2.jpg" width="5120" height="3200"/>
+    </resources>
 </document>
