@@ -16,12 +16,58 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Rrh-AF-E9n">
+                                <rect key="frame" x="10" y="72" width="580" height="598"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="koE-aK-Wih">
+                                        <rect key="frame" x="2" y="0.0" width="576" height="235"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xNj-Pp-CZW">
+                                        <rect key="frame" x="0.0" y="235" width="580" height="235"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="INI-Rt-bms">
+                                        <rect key="frame" x="0.0" y="470" width="580" height="128"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="koE-aK-Wih" firstAttribute="top" secondItem="Rrh-AF-E9n" secondAttribute="top" constant="2" id="6R0-qS-dSF"/>
+                                    <constraint firstAttribute="trailing" secondItem="koE-aK-Wih" secondAttribute="trailing" constant="2" id="HmU-sk-Uzq"/>
+                                    <constraint firstItem="koE-aK-Wih" firstAttribute="leading" secondItem="Rrh-AF-E9n" secondAttribute="leading" constant="2" id="Kej-wk-nCo"/>
+                                    <constraint firstItem="INI-Rt-bms" firstAttribute="leading" secondItem="Rrh-AF-E9n" secondAttribute="leading" id="Ni6-q1-oUi"/>
+                                    <constraint firstItem="xNj-Pp-CZW" firstAttribute="leading" secondItem="Rrh-AF-E9n" secondAttribute="leading" id="SOm-ez-SC5"/>
+                                    <constraint firstAttribute="bottom" secondItem="koE-aK-Wih" secondAttribute="bottom" constant="2" id="jl6-dF-h2I"/>
+                                    <constraint firstAttribute="trailing" secondItem="INI-Rt-bms" secondAttribute="trailing" id="lxX-ns-PhZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="xNj-Pp-CZW" secondAttribute="trailing" id="w7f-tC-nx6"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="6R0-qS-dSF"/>
+                                        <exclude reference="jl6-dF-h2I"/>
+                                    </mask>
+                                </variation>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Rrh-AF-E9n" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="9LE-GY-XDP"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Rrh-AF-E9n" secondAttribute="bottom" constant="10" id="gsm-f8-7lN"/>
+                            <constraint firstItem="Rrh-AF-E9n" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="kbd-El-ILT"/>
+                            <constraint firstAttribute="trailing" secondItem="Rrh-AF-E9n" secondAttribute="trailing" constant="10" id="yqF-qD-kG2"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="favorites" id="sTa-jC-8md"/>
                     <navigationItem key="navigationItem" id="u1Q-nK-Zhw">
                         <barButtonItem key="rightBarButtonItem" title="Item" id="jwz-x7-4N1"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="firstView" destination="koE-aK-Wih" id="8dC-4g-WdB"/>
+                        <outlet property="secondView" destination="xNj-Pp-CZW" id="t7x-Fg-n4N"/>
+                        <outlet property="thirdView" destination="INI-Rt-bms" id="K6J-Fi-rWM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
