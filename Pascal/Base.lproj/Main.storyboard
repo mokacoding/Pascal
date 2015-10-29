@@ -18,19 +18,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Rrh-AF-E9n">
-                                <rect key="frame" x="10" y="72" width="580" height="598"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="Rrh-AF-E9n">
+                                <rect key="frame" x="10" y="72" width="580" height="469"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="koE-aK-Wih">
-                                        <rect key="frame" x="2" y="0.0" width="576" height="235"/>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="koE-aK-Wih">
+                                        <rect key="frame" x="0.0" y="0.0" width="580" height="153"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
-                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xNj-Pp-CZW">
-                                        <rect key="frame" x="0.0" y="235" width="580" height="235"/>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xNj-Pp-CZW">
+                                        <rect key="frame" x="0.0" y="159" width="580" height="152"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
-                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="INI-Rt-bms">
-                                        <rect key="frame" x="0.0" y="470" width="580" height="128"/>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="INI-Rt-bms">
+                                        <rect key="frame" x="0.0" y="317" width="580" height="153"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
                                 </subviews>
@@ -47,7 +47,12 @@
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="6R0-qS-dSF"/>
+                                        <exclude reference="HmU-sk-Uzq"/>
+                                        <exclude reference="Kej-wk-nCo"/>
                                         <exclude reference="jl6-dF-h2I"/>
+                                        <exclude reference="w7f-tC-nx6"/>
+                                        <exclude reference="Ni6-q1-oUi"/>
+                                        <exclude reference="lxX-ns-PhZ"/>
                                     </mask>
                                 </variation>
                             </stackView>
