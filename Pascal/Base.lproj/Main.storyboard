@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9058" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="aCt-8q-q31">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="aCt-8q-q31">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9048"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -86,14 +86,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="rW2-78-kO3">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="rW2-78-kO3">
                                 <rect key="frame" x="20" y="72" width="560" height="471"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wallpaper2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="YS9-pA-i04">
-                                        <rect key="frame" x="0.0" y="0.0" width="560" height="236"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="wallpaper.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="YS9-pA-i04">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="114"/>
                                     </imageView>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XaJ-vm-6Ha">
-                                        <rect key="frame" x="0.0" y="236" width="560" height="236"/>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XaJ-vm-6Ha">
+                                        <rect key="frame" x="0.0" y="120" width="560" height="113"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="wallpaper2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Pak-8D-Cdj">
+                                        <rect key="frame" x="0.0" y="239" width="560" height="114"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aAb-qy-Ath">
+                                        <rect key="frame" x="0.0" y="358" width="560" height="113"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
                                 </subviews>
@@ -109,8 +116,10 @@
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="history" id="syS-fM-dkn"/>
                     <connections>
-                        <outlet property="coloredView" destination="XaJ-vm-6Ha" id="Mny-pB-swL"/>
-                        <outlet property="imageView" destination="YS9-pA-i04" id="hTz-pF-Q6c"/>
+                        <outlet property="bottomColoredView" destination="aAb-qy-Ath" id="yDS-C9-jZE"/>
+                        <outlet property="bottomImageView" destination="Pak-8D-Cdj" id="2Gc-gK-auJ"/>
+                        <outlet property="topColoredView" destination="XaJ-vm-6Ha" id="lyM-LL-7P8"/>
+                        <outlet property="topImageView" destination="YS9-pA-i04" id="kjN-LL-vOl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Ta-ce-M8h" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -156,6 +165,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="wallpaper2.jpg" width="5120" height="3200"/>
+        <image name="wallpaper.jpg" width="840" height="525"/>
+        <image name="wallpaper2.jpg" width="1280" height="800"/>
     </resources>
 </document>

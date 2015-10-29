@@ -11,12 +11,16 @@ import ChameleonFramework
 
 class ImageViewController: UIViewController {
 
-  @IBOutlet weak var imageView: UIImageView!
-  @IBOutlet weak var coloredView: UIView!
+  @IBOutlet weak var topImageView: UIImageView!
+  @IBOutlet weak var topColoredView: UIView!
+
+  @IBOutlet weak var bottomImageView: UIImageView!
+  @IBOutlet weak var bottomColoredView: UIView!
 
   override func viewDidLoad() {
     super.viewDidLoad()
 
-    coloredView.backgroundColor = UIColor.init(averageColorFromImage: imageView.image, withAlpha: 1)
+    topColoredView.backgroundColor = UIColor.init(averageColorFromImage: topImageView.image, withAlpha: 1)
+    bottomColoredView.backgroundColor = UIColor.init(averageColorFromImage: bottomImageView.image, withAlpha: 1)
   }
 }
